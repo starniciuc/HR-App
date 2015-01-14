@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
   <head>
     <title></title>
@@ -7,9 +7,57 @@
 
   </head>
   <body>
-    <div class="wrapper">
-
+    <div id="header">
+      <div class="wrapper">
+      <h1>HR-Application</h1>
+      </div>
     </div>
+    <div id="content">
+      <div class="wrapper">
+        <form class="form-horizontal">
+          <fieldset>
+
+            <!-- Form Name -->
+            <legend>Log In</legend>
+
+            <!-- Text input-->
+            <div class="control-group">
+              <label class="control-label" for="textinput">User Name :</label>
+              <div class="controls">
+                <input id="textinput" name="textinput" placeholder="username" class="input-xlarge" type="text">
+                <p class="help-block">help</p>
+              </div>
+            </div>
+
+            <!-- Password input-->
+            <div class="control-group">
+              <label class="control-label" for="passwordinput">Password :</label>
+              <div class="controls">
+                <input id="passwordinput" name="passwordinput" placeholder="password" class="input-xlarge" type="password">
+                <p class="help-block">help</p>
+              </div>
+            </div>
+
+            <!-- Button (Double) -->
+            <div class="control-group">
+              <label class="control-label" for="button1id"></label>
+              <div class="controls">
+                <button id="button1id" name="button1id" class="btn btn-success">Log In</button>
+                <button id="button2id" name="button2id" class="btn btn-danger">Reset</button>
+              </div>
+            </div>
+
+          </fieldset>
+        </form>
+
+      </div>
+    </div>
+    <div id="footer">
+      <div class="wrapper">
+
+      </div>
+    </div>
+
     <script language="javascript" src="js/bootstrap.min.js"></script>
     <script language="javascript" src="js/jquery.js"></script>
 
