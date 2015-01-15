@@ -24,7 +24,7 @@
             <div class="control-group">
               <label class="control-label" for="textinput">User Name :</label>
               <div class="controls">
-                <input id="textinput" name="textinput" placeholder="username" class="input-xlarge" type="text">
+                <input id="textinput" name="username" placeholder="username" class="input-xlarge" type="text">
                 <p class="help-block">help</p>
               </div>
             </div>
@@ -33,7 +33,7 @@
             <div class="control-group">
               <label class="control-label" for="passwordinput">Password :</label>
               <div class="controls">
-                <input id="passwordinput" name="passwordinput" placeholder="password" class="input-xlarge" type="password">
+                <input id="passwordinput" name="userpass" placeholder="password" class="input-xlarge" type="password">
                 <p class="help-block">help</p>
               </div>
             </div>
