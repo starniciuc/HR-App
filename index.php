@@ -14,7 +14,7 @@
     </div>
     <div id="content">
       <div class="wrapper">
-        <form class="form-horizontal">
+        <form class="form-horizontal" method="post" id="login-form" action="login.php">
           <fieldset>
 
             <!-- Form Name -->
@@ -42,8 +42,8 @@
             <div class="control-group">
               <label class="control-label" for="button1id"></label>
               <div class="controls">
-                <button id="button1id" name="button1id" class="btn btn-success">Log In</button>
-                <button id="button2id" name="button2id" class="btn btn-danger">Reset</button>
+                <button id="button1id" name="button1id" class="btn btn-success" type="submit">Log In</button>
+                <button id="button2id" name="button2id" class="btn btn-danger" type="reset">Reset</button>
               </div>
             </div>
 
@@ -57,6 +57,7 @@
 
       </div>
     </div>
+
 
     <script language="javascript" src="js/bootstrap.min.js"></script>
     <script language="javascript" src="js/jquery.js"></script>
