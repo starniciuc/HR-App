@@ -8,6 +8,10 @@
     top:14px;
     border-bottom:1px solid gray;
   }
+  p{
+    margin-top:40px;
+    margin-left:300px;
+  }
 
   </style>
 
@@ -26,6 +30,9 @@
         <li role="presentation"><a href="interns.php">Interns</a></li>
         <li role="presentation"><a href="dept.php">Departement</a></li>
       </ul>
+      <p>
+        <img src="hr.jpeg" alt="HR Departement"/>
+      </p>
 
     </div>
   </div>
