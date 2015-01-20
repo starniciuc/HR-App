@@ -4,6 +4,16 @@
     <title></title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/custom.css"/>
+    <style type="text/css">
+      form#login-form{
+        float:left;
+        
+      }
+      figure{
+        float:right;
+        margin-left:50px;
+      }
+    </style>
 
   </head>
   <body>
@@ -25,7 +35,7 @@
               <label class="control-label" for="textinput">User Name :</label>
               <div class="controls">
                 <input id="textinput" name="username" placeholder="username" class="input-xlarge" type="text">
-                <p class="help-block">help</p>
+                <p class="help-block">Please enter your username</p>
               </div>
             </div>
 
@@ -34,7 +44,7 @@
               <label class="control-label" for="passwordinput">Password :</label>
               <div class="controls">
                 <input id="passwordinput" name="userpass" placeholder="password" class="input-xlarge" type="password">
-                <p class="help-block">help</p>
+                <p class="help-block">Please enter your password</p>
               </div>
             </div>
 
@@ -49,6 +59,9 @@
 
           </fieldset>
         </form>
+        <figure>
+        <img src="hr1.jpg" alt="HR" />
+         </figure>
 
       </div>
     </div>
