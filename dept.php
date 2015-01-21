@@ -1,3 +1,11 @@
+<?php
+session_start();
+if(!isset($_SESSION['login'])){
+  header("location:index.php");
+}
+
+
+?>
 <html>
 <head>
   <title></title>
@@ -25,8 +33,9 @@
         <li role="presentation" ><a href="employee.php">Employees</a></li>
         <li role="presentation" ><a href="interns.php">Interns</a></li>
         <li role="presentation" class="active"><a href="dept.php">Departement</a></li>
+        <a><button type="button" class="btn btn-danger" id="decon">Log out</button></a>
       </ul>
-      
+
     </div>
   </div>
   <div id="footer">

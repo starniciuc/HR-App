@@ -6,7 +6,7 @@ margin:0px;
 .wrapper{
   margin:0px auto;
   width:1200px;
-  
+
 }
 #header{
   width:100%;
@@ -25,4 +25,8 @@ div h1{
 }
 #login-form{
   margin-top:14px;
+}
+#decon{
+  float:right;
+  margin-top:20px;
 }

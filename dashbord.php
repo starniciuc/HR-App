@@ -1,3 +1,12 @@
+
+<?php
+session_start();
+if(!isset($_SESSION['login'])){
+  header("location:index.php");
+}
+
+
+?>
 <html>
 <head>
   <title></title>
@@ -12,6 +21,7 @@
     margin-top:40px;
     margin-left:300px;
   }
+
 
   </style>
 
@@ -29,6 +39,7 @@
         <li role="presentation"><a href="employee.php">Employees</a></li>
         <li role="presentation"><a href="interns.php">Interns</a></li>
         <li role="presentation"><a href="dept.php">Departement</a></li>
+        <a><button type="button" class="btn btn-danger" id="decon">Log out</button></a>
       </ul>
       <p>
         <img src="hr.jpeg" alt="HR Departement"/>

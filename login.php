@@ -15,6 +15,8 @@ echo('<a href="index.php">Go back</a>');
 
 }
 else{
+  session_start();
+  $_SESSION['login']=$login;
   header("location:dashbord.php");
 }
 
