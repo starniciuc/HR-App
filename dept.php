@@ -33,7 +33,7 @@ if(!isset($_SESSION['login'])){
         <li role="presentation" ><a href="employee.php">Employees</a></li>
         <li role="presentation" ><a href="interns.php">Interns</a></li>
         <li role="presentation" class="active"><a href="dept.php">Departement</a></li>
-        <a><button type="button" class="btn btn-danger" id="decon">Log out</button></a>
+        <a href="dcon.php"><button type="button" class="btn btn-danger" id="decon">Log out</button></a>
       </ul>
 
     </div>
