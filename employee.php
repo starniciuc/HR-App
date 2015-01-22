@@ -3,6 +3,11 @@ session_start();
 if(!isset($_SESSION['login'])){
   header("location:index.php");
 }
+require_once("conn.php");
+$sql="SELECT e.empno, e.ename, e.job, e.hiredate, e.comm, e.sal, d.deptname FROM emp AS e, dept AS d WHERE e.deptno = d.deptno";
+$stmt=$conn->prepare($sql);
+$stmt->execute();
+
 
 
 ?>
@@ -15,6 +20,13 @@ if(!isset($_SESSION['login'])){
   ul li{
     top:14px;
     border-bottom:1px solid gray;
+  }
+  div.panel{
+    margin-top:20px;
+  }
+  th{
+    color:white;
+    background-color:orange;
   }
 
   </style>
@@ -35,6 +47,35 @@ if(!isset($_SESSION['login'])){
         <li role="presentation"><a href="dept.php">Departement</a></li>
         <a href="dcon.php"><button type="button" class="btn btn-danger" id="decon">Log out</button></a>
       </ul>
+      <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading"><h3 align="center">Employees</h3></div>
+
+        <!-- Table -->
+        <table class="table">
+        <tr>
+          <th>ID</th><th>FULL NAME</th> <th>JOB</th> <th>HIRE DATE</th><th>COMM</th><th>SALARY</th><th>DEPARTMENT</th>
+        </tr>
+        <?php
+        while($result=$stmt->fetch(PDO::FETCH_ASSOC)){
+       ?>
+       <tr>
+         <td><?php echo($result['empno'])?></td>
+         <td><?php echo($result['ename'])?></td>
+         <td><?php echo($result['job'])?></td>
+         <td><?php echo($result['hiredate'])?></td>
+         <td><?php echo($result['comm'])?></td>
+         <td><?php echo($result['sal'])?></td>
+         <td><?php echo($result['deptname'])?></td>
+         <td><button type="button" class="btn btn-info">EDIT</button></td>
+         <td><button type="button" class="btn btn-danger">DELETE</button></td>
+       </tr>
+       <?php
+       }
+
+       ?>
+        </table>
+      </div>
 
     </div>
   </div>
