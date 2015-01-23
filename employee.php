@@ -67,8 +67,8 @@ $stmt->execute();
          <td><?php echo($result['comm'])?></td>
          <td><?php echo($result['sal'])?></td>
          <td><?php echo($result['deptname'])?></td>
-         <td><button type="button" class="btn btn-info">EDIT</button></td>
-         <td><button type="button" class="btn btn-danger">DELETE</button></td>
+         <td><a href="editemp.php?id=<?php echo($result['empno'])?>"><button type="button" class="btn btn-info">EDIT</button></a></td>
+         <td><a href="delemp.php?id=<?php echo($result['empno'])?>"><button type="button" class="btn btn-danger">DELETE</button></a></td>
        </tr>
        <?php
        }
