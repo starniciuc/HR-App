@@ -4,7 +4,7 @@ if(!isset($_SESSION['login'])){
   header("location:index.php");
 }
 require_once("conn.php");
-$sql="SELECT e.ename, e.job, e.hiredate, e.comm, e.sal,d.deptno,d.deptname FROM emp AS e, dept AS d WHERE e.deptno = d.deptno";
+$sql="SELECT e.ename, e.job, e.hiredate, e.comm, e.sal,d.deptno,d.deptname FROM emp AS e, dept AS d WHERE e.deptno = d.deptno and empno='".$_GET['id']."'";
 $stmt=$conn->prepare($sql);
 $stmt->execute();
 $rs=$stmt->fetch(PDO::FETCH_ASSOC);
