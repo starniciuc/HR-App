@@ -8,6 +8,7 @@ $sql="SELECT e.ename, e.job, e.hiredate, e.comm, e.sal,d.deptno,d.deptname FROM 
 $stmt=$conn->prepare($sql);
 $stmt->execute();
 $rs=$stmt->fetch(PDO::FETCH_ASSOC);
+$ido=$_GET["id"];
 ?>
 
 <html>
@@ -28,12 +29,13 @@ $rs=$stmt->fetch(PDO::FETCH_ASSOC);
   </div>
   <div id="content">
     <div class="wrapper">
-      <form class="form-horizontal" id="editemp-login" action="seditemp.php">
+      <form class="form-horizontal" id="editemp-login" action="seditemp.php" method="post">
         <fieldset>
 
           <!-- Form Name -->
           <legend>EDIT EMPLOYEE</legend>
-          <input type="hidden" name="empno" value="<?php echo($_GET["id"]) ?>">
+          <label for="cd">IDENTIFICATION NUMBER</label><br>
+          <input type="text" id="cd" readonly="readonly" name="empno" value="<?php echo($ido) ?>"/>
 
           <!-- Text input-->
           <div class="control-group">
