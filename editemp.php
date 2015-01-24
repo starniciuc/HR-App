@@ -1,3 +1,15 @@
+<?php
+session_start();
+if(!isset($_SESSION['login'])){
+  header("location:index.php");
+}
+require_once("conn.php");
+$sql="SELECT e.ename, e.job, e.hiredate, e.comm, e.sal,d.deptno,d.deptname FROM emp AS e, dept AS d WHERE e.deptno = d.deptno";
+$stmt=$conn->prepare($sql);
+$stmt->execute();
+$rs=$stmt->fetch(PDO::FETCH_ASSOC);
+?>
+
 <html>
 <head>
   <title>EDIT EMPLOYEE</title>
@@ -16,7 +28,7 @@
   </div>
   <div id="content">
     <div class="wrapper">
-      <form class="form-horizontal" id="editemp-login" action="#">
+      <form class="form-horizontal" id="editemp-login" action="seditemp.php">
         <fieldset>
 
           <!-- Form Name -->
@@ -26,7 +38,7 @@
           <div class="control-group">
             <label class="control-label" for="fname">FULL NAME</label>
             <div class="controls">
-              <input id="fname" name="fname" placeholder="" class="input-xlarge" type="text">
+              <input id="fname" name="fname" value="<?php echo($rs['ename'])?>" class="input-xlarge" type="text">
 
             </div>
           </div>
@@ -35,7 +47,7 @@
           <div class="control-group">
             <label class="control-label" for="job">JOB</label>
             <div class="controls">
-              <input id="job" name="job" placeholder="" class="input-xlarge" type="text">
+              <input id="job" name="job" value="<?php echo($rs['job'])?>" class="input-xlarge" type="text">
 
             </div>
           </div>
@@ -44,7 +56,7 @@
           <div class="control-group">
             <label class="control-label" for="hiredate">HIRE DATE</label>
             <div class="controls">
-              <input id="hiredate" name="hiredate" placeholder="" class="input-xlarge" type="text">
+              <input id="hiredate" name="hiredate" value="<?php echo($rs['hiredate'])?>" class="input-xlarge" type="text">
 
             </div>
           </div>
@@ -53,7 +65,7 @@
           <div class="control-group">
             <label class="control-label" for="comm">COMMISSION</label>
             <div class="controls">
-              <input id="comm" name="comm" placeholder="" class="input-xlarge" type="text">
+              <input id="comm" name="comm" value="<?php echo($rs['comm'])?>" class="input-xlarge" type="text">
 
             </div>
           </div>
@@ -62,7 +74,7 @@
           <div class="control-group">
             <label class="control-label" for="sal">SALARY</label>
             <div class="controls">
-              <input id="sal" name="sal" placeholder="" class="input-xlarge" type="text">
+              <input id="sal" name="sal" value="<?php echo($rs['sal'])?>" class="input-xlarge" type="text">
 
             </div>
           </div>
@@ -72,6 +84,7 @@
             <label class="control-label" for="deptno">DEPARTMENT NAME</label>
             <div class="controls">
               <select id="deptno" name="deptno" class="input-xlarge">
+                <option value="<?php echo($rs['deptno'])?>"><?php echo($rs['deptname'])?></option>
                 <option value="1">INFORMATION TECHNOLOGY</option>
                 <option value="2">SALES</option>
                 <option value="4">FINANCIAL</option>
@@ -86,7 +99,7 @@
             <label class="control-label" for="button1id"></label>
             <div class="controls">
               <button type="submit" id="button1id" name="button1id" class="btn btn-success">EDIT</button>
-              <button type="submit" id="button2id" name="button2id" class="btn btn-danger">RESET</button>
+              <button type="reset" id="button2id" name="button2id" class="btn btn-danger">RESET</button>
             </div>
           </div>
 
