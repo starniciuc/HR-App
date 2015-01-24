@@ -33,6 +33,7 @@ $rs=$stmt->fetch(PDO::FETCH_ASSOC);
 
           <!-- Form Name -->
           <legend>EDIT EMPLOYEE</legend>
+          <input type="hidden" name="empno" value="<?php echo($_GET["id"]) ?>">
 
           <!-- Text input-->
           <div class="control-group">
