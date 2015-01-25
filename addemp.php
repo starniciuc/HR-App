@@ -86,7 +86,7 @@
           <div class="control-group">
             <label class="control-label" for="button1id"></label>
             <div class="controls">
-              <button type="submit" id="button1id" name="button1id" class="btn btn-success">EDIT</button>
+              <button type="submit" id="button1id" name="button1id" class="btn btn-success">ADD</button>
               <button type="reset" id="button2id" name="button2id" class="btn btn-danger">RESET</button>
             </div>
           </div>
