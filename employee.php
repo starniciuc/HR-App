@@ -56,7 +56,7 @@ $stmt->execute();
         <tr>
           <th>ID</th><th>FULL NAME</th> <th>JOB</th> <th>HIRE DATE</th>
           <th>COMM</th><th>SALARY</th><th>DEPARTMENT</th>
-          <td colspan="2"><button type="button" class="btn btn-success btn-lg">ADD AN EMPLOYEE</button></td>
+          <td colspan="2"><a href="addemp.php"><button type="button" class="btn btn-success btn-lg">ADD AN EMPLOYEE</button></a></td>
           <td></td>
         </tr>
         <?php
