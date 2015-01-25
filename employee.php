@@ -54,7 +54,10 @@ $stmt->execute();
         <!-- Table -->
         <table class="table">
         <tr>
-          <th>ID</th><th>FULL NAME</th> <th>JOB</th> <th>HIRE DATE</th><th>COMM</th><th>SALARY</th><th>DEPARTMENT</th>
+          <th>ID</th><th>FULL NAME</th> <th>JOB</th> <th>HIRE DATE</th>
+          <th>COMM</th><th>SALARY</th><th>DEPARTMENT</th>
+          <td colspan="2"><button type="button" class="btn btn-success btn-lg">ADD AN EMPLOYEE</button></td>
+          <td></td>
         </tr>
         <?php
         while($result=$stmt->fetch(PDO::FETCH_ASSOC)){
