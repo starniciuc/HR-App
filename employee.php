@@ -72,6 +72,7 @@ $stmt->execute();
        </tr>
        <?php
        }
+       $conn=null;
 
        ?>
         </table>

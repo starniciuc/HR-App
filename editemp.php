@@ -96,7 +96,7 @@ $ido=$_GET["id"];
               </select>
             </div>
           </div>
-
+          <?php $conn=null ?>
           <!-- Button (Double) -->
           <div class="control-group">
             <label class="control-label" for="button1id"></label>
