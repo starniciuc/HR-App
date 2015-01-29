@@ -61,8 +61,8 @@ $stmt->execute();
             <td><?php echo($result['dateto'])?></td>
             <td><?php echo($result['job'])?></td>
             <td><?php echo($result['deptname'])?></td>
-            <td><a href="editemp.php?id=<?php echo($result['empno'])?>"><button type="button" class="btn btn-info">EDIT</button></a></td>
-            <td><a href="delemp.php?id=<?php echo($result['empno'])?>"><button type="button" class="btn btn-danger">DELETE</button></a></td>
+            <td><a href="edintern.php?id=<?php echo($result['internid'])?>"><button type="button" class="btn btn-info">EDIT</button></a></td>
+            <td><a href="delintern.php?id=<?php echo($result['internid'])?>"><button type="button" class="btn btn-danger">DELETE</button></a></td>
           </tr>
           <?php
         }
