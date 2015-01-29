@@ -1,8 +1,12 @@
 <?php
+require_once("conn.php");
 session_start();
 if(!isset($_SESSION['login'])){
   header("location:index.php");
 }
+$sql="select i.internid,i.intername,i.college,i.datefrom,i.dateto,i.job,d.deptname from interns as i ,dept as d where i.deptno=d.deptno";
+$stmt=$conn->prepare($sql);
+$stmt->execute();
 
 
 ?>
@@ -16,7 +20,10 @@ if(!isset($_SESSION['login'])){
     top:14px;
     border-bottom:1px solid gray;
   }
-
+  th{
+    background-color:#B74934;
+    color:white;
+  }
   </style>
 
 </head>
@@ -36,7 +43,35 @@ if(!isset($_SESSION['login'])){
         <a href="dcon.php"><button type="button" class="btn btn-danger" id="decon">Log out</button></a>
       </ul>
 
+      <table class="table">
+        <tr>
+          <th>ID</th><th>FULL NAME</th> <th>COLLEGE</th> <th> FROM DATE</th>
+          <th>TO DATE</th><th>JOB</th><th>DEPARTMENT NAME</th>
+          <td colspan="2"><a href="addinter.php"><button type="button" class="btn btn-success btn-lg">ADD AN INTERN</button></a></td>
+          <td></td>
+        </tr>
+        <?php
+        while($result=$stmt->fetch(PDO::FETCH_ASSOC)){
+          ?>
+          <tr>
+            <td><?php echo($result['internid'])?></td>
+            <td><?php echo($result['intername'])?></td>
+            <td><?php echo($result['college'])?></td>
+            <td><?php echo($result['datefrom'])?></td>
+            <td><?php echo($result['dateto'])?></td>
+            <td><?php echo($result['job'])?></td>
+            <td><?php echo($result['deptname'])?></td>
+            <td><a href="editemp.php?id=<?php echo($result['empno'])?>"><button type="button" class="btn btn-info">EDIT</button></a></td>
+            <td><a href="delemp.php?id=<?php echo($result['empno'])?>"><button type="button" class="btn btn-danger">DELETE</button></a></td>
+          </tr>
+          <?php
+        }
+        $conn=null;
+
+        ?>
+      </table>
     </div>
+
   </div>
   <div id="footer">
     <div class="wrapper">
