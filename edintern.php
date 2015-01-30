@@ -29,11 +29,11 @@ $ido=$_GET["id"];
   </div>
   <div id="content">
     <div class="wrapper">
-      <form class="form-horizontal" id="editemp-login" action="seditemp.php" method="post">
+      <form class="form-horizontal" id="editemp-login" action="sedintern.php" method="post">
         <fieldset>
 
           <!-- Form Name -->
-          <legend>EDIT EMPLOYEE</legend>
+          <legend>EDIT AN INTERN</legend>
           <label for="cd">IDENTIFICATION NUMBER</label><br>
           <input type="text" id="cd" readonly="readonly" name="internid" value="<?php echo($ido) ?>"/>
 
@@ -41,7 +41,7 @@ $ido=$_GET["id"];
           <div class="control-group">
             <label class="control-label" for="fname">FULL NAME</label>
             <div class="controls">
-              <input id="fname" name="fname" value="<?php echo($rs['intername'])?>" class="input-xlarge" type="text">
+              <input id="fname" name="intername" value="<?php echo($rs['intername'])?>" class="input-xlarge" type="text">
 
             </div>
           </div>
