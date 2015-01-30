@@ -35,6 +35,7 @@ $stmt->execute();
   </div>
   <div id="content">
     <div class="wrapper">
+
       <ul class="nav nav-pills">
         <li role="presentation"><a href="dashbord.php">Home</a></li>
         <li role="presentation" ><a href="employee.php">Employees</a></li>
@@ -42,7 +43,9 @@ $stmt->execute();
         <li role="presentation"><a href="dept.php">Departement</a></li>
         <a href="dcon.php"><button type="button" class="btn btn-danger" id="decon">Log out</button></a>
       </ul>
-
+      <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading"><h3 align="center">INTERNS</h3></div>
       <table class="table">
         <tr>
           <th>ID</th><th>FULL NAME</th> <th>COLLEGE</th> <th> FROM DATE</th>
@@ -70,6 +73,7 @@ $stmt->execute();
 
         ?>
       </table>
+    </div>
     </div>
 
   </div>
