@@ -24,6 +24,9 @@ $stmt->execute();
     background-color:#B74934;
     color:white;
   }
+  div#pano{
+    margin-top:20px;
+  }
   </style>
 
 </head>
@@ -43,7 +46,7 @@ $stmt->execute();
         <li role="presentation"><a href="dept.php">Departement</a></li>
         <a href="dcon.php"><button type="button" class="btn btn-danger" id="decon">Log out</button></a>
       </ul>
-      <div class="panel panel-default">
+      <div id="pano" class="panel panel-default">
         <!-- Default panel contents -->
         <div class="panel-heading"><h3 align="center">INTERNS</h3></div>
       <table class="table">
