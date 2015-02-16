@@ -12,7 +12,7 @@ $stmt->execute();
 ?>
 <html>
 <head>
-  <title></title>
+  <title>Interns and intership</title>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
   <link rel="stylesheet" type="text/css" href="css/custom.css"/>
   <style type="text/css">
