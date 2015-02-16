@@ -1,10 +1,21 @@
 <html>
 <head>
-  <title>EDIT EMPLOYEE</title>
+  <title>ADD EMPLOYEE</title>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
   <link rel="stylesheet" type="text/css" href="css/custom.css"/>
   <style type="text/css">
+  figure{
+    float:left;
 
+  }
+  img{
+    height:500px;
+    width:500px;
+    margin-left:150px;
+  }
+  form{
+    float:left;
+  }
   </style>
 
 </head>
@@ -94,8 +105,9 @@
         </fieldset>
       </form>
 
-
+        <figure><img src="hr4.jpg" alt="new employee" /></figure>
     </div>
+
   </div>
   <div id="footer">
     <div class="wrapper">
