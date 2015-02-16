@@ -21,6 +21,11 @@ $ido=$_GET["id"];
     float:right;
     margin-right:50px;
     margin-top:20px;
+    /*figure of page*/
+  }
+  img{
+    border-radius:50%;
+
   }
   form{
     float:left;
