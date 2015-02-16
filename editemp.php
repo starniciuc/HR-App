@@ -17,7 +17,15 @@ $ido=$_GET["id"];
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
   <link rel="stylesheet" type="text/css" href="css/custom.css"/>
   <style type="text/css">
-
+  figure{
+    float:right;
+    margin-right:50px;
+    margin-top:20px;
+  }
+  form{
+    float:left;
+    margin-left:70px;
+  }
   </style>
 
 </head>
@@ -108,7 +116,9 @@ $ido=$_GET["id"];
 
         </fieldset>
       </form>
-
+      <figure>
+        <img src="hr3.jpg" alt="Add employee" />
+      </figure>
 
     </div>
   </div>
