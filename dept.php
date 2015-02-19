@@ -16,6 +16,15 @@ if(!isset($_SESSION['login'])){
     top:14px;
     border-bottom:1px solid gray;
   }
+  .panel{
+    margin-top:20px;
+  }
+  .panel-heading{
+    text-align:center;
+    background-color:;
+
+  }
+
 
   </style>
 
@@ -40,6 +49,25 @@ if(!isset($_SESSION['login'])){
   </div>
   <div id="footer">
     <div class="wrapper">
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+          </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+
+      <div class="panel panel-default">
+          <!-- Default panel contents -->
+          <div class="panel-heading"><h3 style="color:black;">INFORMATIONS</h3></div>
+          <div class="panel-body">
+            <p></p>
+          </div>
+
+          <!-- Table -->
+          <table class="table">
+
+          </table>
+        </div>
 
     </div>
   </div>
