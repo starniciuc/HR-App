@@ -23,6 +23,7 @@ if(!isset($_SESSION['login'])){
     text-align:center;
     background-color:;
 
+
   }
 
 
@@ -47,34 +48,35 @@ if(!isset($_SESSION['login'])){
 
     </div>
   </div>
-  <div id="footer">
+
     <div class="wrapper">
       <form class="navbar-form navbar-left" role="search">
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-          </div>
-      <button type="submit" class="btn btn-default">Submit</button>
+          <input type="text" id="search" class="form-control" placeholder="Search">
+          <p>
+            <input class="cat" type="radio" name="cat" value="1" checked>Employee
+            <input class="cat" type="radio" name="cat" value="2">Interns
+          </p>
+
+
+        </div><br>
+
   </form>
 
       <div class="panel panel-default">
           <!-- Default panel contents -->
           <div class="panel-heading"><h3 style="color:black;">INFORMATIONS</h3></div>
           <div class="panel-body">
-            <p></p>
+            <p> </p>
           </div>
 
-          <!-- Table -->
-          <table class="table">
-
-          </table>
         </div>
 
     </div>
-  </div>
+    <script language="javascript" src="js/jquery.js"></script>
+    <script language="javascript" src="js/custom.js"></script>
 
 
-  <script language="javascript" src="js/bootstrap.min.js"></script>
-  <script language="javascript" src="js/jquery.js"></script>
 
 </body>
 </html>
