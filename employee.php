@@ -89,9 +89,9 @@ $stmt->execute();
     </div>
   </div>
 
-
-  <script language="javascript" src="js/bootstrap.min.js"></script>
   <script language="javascript" src="js/jquery.js"></script>
+  
+  <script language="javascript" src="js/bootstrap.min.js"></script>
 
 </body>
 </html>

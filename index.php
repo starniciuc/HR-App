@@ -7,7 +7,7 @@
     <style type="text/css">
       form#login-form{
         float:left;
-        
+
       }
       figure{
         float:right;
@@ -72,8 +72,8 @@
     </div>
 
 
-    <script language="javascript" src="js/bootstrap.min.js"></script>
     <script language="javascript" src="js/jquery.js"></script>
+    <script language="javascript" src="js/bootstrap.min.js"></script>
 
   </body>
 </html>

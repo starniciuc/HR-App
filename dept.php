@@ -52,7 +52,9 @@ if(!isset($_SESSION['login'])){
     <div class="wrapper">
       <form class="navbar-form navbar-left" role="search">
         <div class="form-group">
-          <input type="text" id="search" class="form-control" placeholder="Search">
+
+          <span class="glyphicon glyphicon-search"></span>
+          <input type="text" id="search" class="form-control" placeholder="Search by name">
           <p>
             <input class="cat" type="radio" name="cat" value="1" checked>Employee
             <input class="cat" type="radio" name="cat" value="2">Interns
@@ -67,13 +69,16 @@ if(!isset($_SESSION['login'])){
           <!-- Default panel contents -->
           <div class="panel-heading"><h3 style="color:black;">INFORMATIONS</h3></div>
           <div class="panel-body">
-            <p> </p>
+            <table class="table">
+
+            </table>
           </div>
 
         </div>
 
     </div>
     <script language="javascript" src="js/jquery.js"></script>
+    <script language="javascript" src="js/bootstrap.min.js"></script>
     <script language="javascript" src="js/custom.js"></script>
 
 
