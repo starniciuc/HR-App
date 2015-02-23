@@ -56,7 +56,7 @@ $stmt->execute();
         <tr>
           <th>ID</th><th>FULL NAME</th> <th>JOB</th> <th>HIRE DATE</th>
           <th>COMM</th><th>SALARY</th><th>DEPARTMENT</th>
-          <td colspan="2"><a href="addemp.php"><button type="button" class="btn btn-success btn-lg">ADD AN EMPLOYEE <span class="glyphicon glyphicon-user"></span></button></a></td>
+          <td colspan="2"><a href="addemp.php"><button type="button" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-plus"></span>New employee</button></a></td>
           <td></td>
         </tr>
         <?php
@@ -70,8 +70,8 @@ $stmt->execute();
          <td><?php echo($result['comm'])?></td>
          <td><?php echo($result['sal'])?></td>
          <td><?php echo($result['deptname'])?></td>
-         <td><a href="editemp.php?id=<?php echo($result['empno'])?>"><button type="button" class="btn btn-info">EDIT <span class="glyphicon glyphicon-edit"></span></button></a></td>
-         <td><a href="delemp.php?id=<?php echo($result['empno'])?>"><button type="button" class="btn btn-danger">DELETE <span class="glyphicon glyphicon-trash"></span></button></a></td>
+         <td><a href="editemp.php?id=<?php echo($result['empno'])?>"><button type="button" class="btn btn-info"><span class="glyphicon glyphicon-edit"></span> Edit</button></a></td>
+         <td><a href="delemp.php?id=<?php echo($result['empno'])?>"><button type="button" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Delete</button></a></td>
        </tr>
        <?php
        }
