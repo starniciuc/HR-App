@@ -53,7 +53,7 @@ $stmt->execute();
         <tr>
           <th>ID</th><th>FULL NAME</th> <th>COLLEGE</th> <th> FROM DATE</th>
           <th>TO DATE</th><th>JOB</th><th>DEPARTMENT NAME</th>
-          <td colspan="2"><a href="addinter.php"><button type="button" class="btn btn-success btn-lg">ADD AN INTERN</button></a></td>
+          <td colspan="2"><a href="addinter.php"><button type="button" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-plus"></span>New intern</button></a></td>
           <td></td>
         </tr>
         <?php
@@ -67,8 +67,8 @@ $stmt->execute();
             <td><?php echo($result['dateto'])?></td>
             <td><?php echo($result['job'])?></td>
             <td><?php echo($result['deptname'])?></td>
-            <td><a href="edintern.php?id=<?php echo($result['internid'])?>"><button type="button" class="btn btn-info">EDIT</button></a></td>
-            <td><a href="delintern.php?id=<?php echo($result['internid'])?>"><button type="button" class="btn btn-danger">DELETE</button></a></td>
+            <td><a href="edintern.php?id=<?php echo($result['internid'])?>"><button type="button" class="btn btn-info"><span class="glyphicon glyphicon-edit"></span> Edit</button></a></td>
+            <td><a href="delintern.php?id=<?php echo($result['internid'])?>"><button type="button" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Delete</button></a></td>
           </tr>
           <?php
         }
