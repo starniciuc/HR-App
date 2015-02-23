@@ -8,7 +8,7 @@ if(isset($nameCat) && isset($cat)){
       if($cat==='1'){
       /**query sql for selecting a records of interns by seeking a name of employee*/
         $sql="SELECT e.empno, e.ename, e.job, e.hiredate, e.comm, e.sal, d.deptname FROM emp AS e, dept AS d
-        WHERE e.ename LIKE '$nameCat%' and e.deptno = d.deptno";
+        WHERE e.ename LIKE '%$nameCat%' and e.deptno = d.deptno";
         $stmt=$conn->prepare($sql);
         #$stmt->bindParam(':ename',$nameCat);
         $stmt->execute();
