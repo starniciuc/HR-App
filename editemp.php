@@ -16,6 +16,8 @@ $ido=$_GET["id"];
   <title>EDIT EMPLOYEE</title>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
   <link rel="stylesheet" type="text/css" href="css/custom.css"/>
+  <link rel="stylesheet" type="text/css" href="css/jquery-ui.css"/>
+
   <style type="text/css">
   figure{
     float:right;
@@ -133,9 +135,12 @@ $ido=$_GET["id"];
     </div>
   </div>
 
-
-  <script language="javascript" src="js/bootstrap.min.js"></script>
   <script language="javascript" src="js/jquery.js"></script>
+  <script language="javascript" src="js/bootstrap.min.js"></script>
+  <script language="javascript" src="js/jquery-ui.js"></script>
+  <script language="javascript" src="js/custom.js"></script>
+
+
 
 </body>
 </html>
