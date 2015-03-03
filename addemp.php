@@ -3,6 +3,12 @@
   <title>ADD EMPLOYEE</title>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
   <link rel="stylesheet" type="text/css" href="css/custom.css"/>
+  <link rel="stylesheet" type="text/css" href="css/jquery-ui.css"/>
+
+  <script language="javascript" src="js/jquery.js"></script>
+  <script language="javascript" src="js/jquery-ui.js"></script>
+  
+
   <style type="text/css">
   figure{
     float:left;
