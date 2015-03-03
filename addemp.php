@@ -5,9 +5,15 @@
   <link rel="stylesheet" type="text/css" href="css/custom.css"/>
   <link rel="stylesheet" type="text/css" href="css/jquery-ui.css"/>
 
-  <script language="javascript" src="js/jquery.js"></script>
-  <script language="javascript" src="js/jquery-ui.js"></script>
-  
+
+  <script type="text/javascript">
+  $(function() {
+    $("#hiredate").datepicker();
+});
+
+
+  </script>
+
 
   <style type="text/css">
   figure{
@@ -122,8 +128,10 @@
   </div>
 
 
-  <script language="javascript" src="js/bootstrap.min.js"></script>
   <script language="javascript" src="js/jquery.js"></script>
+  <script language="javascript" src="js/jquery-ui.js"></script>
+  <script language="javascript" src="js/bootstrap.min.js"></script>
+  <script language="javascript" src="js/custom.js"></script>
 
 </body>
 </html>

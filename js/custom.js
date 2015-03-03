@@ -14,3 +14,4 @@
 
 
   });
+  $('#hiredate').datepicker({dateFormat:"yy-mm-dd"});
