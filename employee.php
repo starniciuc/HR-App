@@ -41,8 +41,8 @@ $stmt->execute();
   <div id="content">
     <div class="wrapper">
       <ul class="nav nav-pills">
-        <li role="presentation" class="active"><a href="dashbord.php"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-        <li role="presentation"><a href="employee.php"><span class="glyphicon glyphicon-user"></span> Employees</a></li>
+        <li role="presentation"><a href="dashbord.php"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+        <li role="presentation" class="active"><a href="employee.php"><span class="glyphicon glyphicon-user"></span> Employees</a></li>
         <li role="presentation"><a href="interns.php"><span class="glyphicon glyphicon-user"></span> Interns</a></li>
         <li role="presentation"><a href="dept.php"><span class="glyphicon glyphicon-stats"></span> Departement</a></li>
         <a href="dcon.php"><button type="button" class="btn btn-danger" id="decon"><span class="glyphicon glyphicon-log-out"></span> Log out</button></a>
