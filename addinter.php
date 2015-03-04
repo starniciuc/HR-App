@@ -2,6 +2,7 @@
 <head>
   <title>EDIT EMPLOYEE</title>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+  <link rel="stylesheet" type="text/css" href="css/jquery-ui.css"/>
   <link rel="stylesheet" type="text/css" href="css/custom.css"/>
   <style type="text/css">
 
@@ -44,7 +45,7 @@
           <div class="control-group">
             <label class="control-label" for="hiredate">FROM DATE</label>
             <div class="controls">
-              <input id="hiredate" name="datefrom"  class="input-xlarge" type="text">
+              <input id="datefrom" name="datefrom"  class="input-xlarge" type="text">
 
             </div>
           </div>
@@ -53,7 +54,7 @@
           <div class="control-group">
             <label class="control-label" for="comm">TO DATE</label>
             <div class="controls">
-              <input id="comm" name="dateto"  class="input-xlarge" type="text">
+              <input id="dateto" name="dateto"  class="input-xlarge" type="text">
 
             </div>
           </div>
@@ -103,9 +104,10 @@
     </div>
   </div>
 
-
-  <script language="javascript" src="js/bootstrap.min.js"></script>
   <script language="javascript" src="js/jquery.js"></script>
+  <script language="javascript" src="js/bootstrap.min.js"></script>
+  <script language="javascript" src="js/jquery-ui.js"></script>
+  <script language="javascript" src="js/custom.js"></script>
 
 </body>
 </html>
