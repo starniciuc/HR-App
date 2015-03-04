@@ -14,4 +14,6 @@
 
 
   });
-  $('#hiredate').datepicker({dateFormat:"yy-mm-dd"});
+  $('#hiredate').datepicker({dateFormat:"yy-mm-dd",navigationAsDateFormat: true,showButtonPanel: true});
+  $('#dateto').datepicker({dateFormat:"yy-mm-dd",navigationAsDateFormat: true,showButtonPanel: true});
+  $('#datefrom').datepicker({dateFormat:"yy-mm-dd",navigationAsDateFormat: true,showButtonPanel: true});
