@@ -30,7 +30,7 @@ $ido=$_GET["id"];
   </div>
   <div id="content">
     <div class="wrapper">
-      <form class="form-horizontal" id="editemp-login" action="sedintern.php" method="post">
+      <form class="form-horizontal" id="editint-login" action="sedintern.php" method="post">
         <fieldset>
 
           <!-- Form Name -->
