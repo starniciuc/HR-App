@@ -26,7 +26,7 @@ if(isset($nameCat) && isset($cat)){
       else{
         /**query sql for selecting a records of interns by seeking a name of interns*/
         $sql="SELECT i.internid,i.intername,i.college,i.datefrom,i.dateto,i.job,d.deptname FROM interns as i ,dept as d
-        where i.intername LIKE'$nameCat%' and
+        where i.intername LIKE'%$nameCat%' and
         i.deptno=d.deptno";
         $stmt=$conn->prepare($sql);
         $stmt->execute();
