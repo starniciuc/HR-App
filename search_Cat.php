@@ -20,7 +20,9 @@ if(isset($nameCat) && isset($cat)){
           echo("<td>".$result['hiredate']."</td>");
           echo("<td>".$result['comm']."</td>");
           echo("<td>".$result['sal']."</td>");
-          echo("<td>".$result['deptname']."</td><tr>");
+          echo("<td>".$result['deptname']."</td>");
+          echo('<td><a href="editemp.php?id='.$result['empno'].'"><button type="button" class="btn btn-info"><span class="glyphicon glyphicon-edit"></span> Edit</button></a></td>');
+          echo('<td><a href="delemp.php?id='.$result['empno'].'"><button type="button" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Delete</button></a></td></tr>');
         }
         }
       else{
