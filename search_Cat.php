@@ -40,7 +40,9 @@ if(isset($nameCat) && isset($cat)){
           echo("<td>".$result['datefrom']."</td>");
           echo("<td>".$result['dateto']."</td>");
           echo("<td>".$result['job']."</td>");
-          echo("<td>".$result['deptname']."</td><tr>");
+          echo("<td>".$result['deptname']."</td>");
+          echo('<td><a href="edintern.php?id='.$result['internid'].'"><button type="button" class="btn btn-info"><span class="glyphicon glyphicon-edit"></span> Edit</button></a></td>
+          <td><a href="delintern.php?id='.$result['internid'].'"><button type="button" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Delete</button></a></td>');
         }
       }
       #echo($cat);
