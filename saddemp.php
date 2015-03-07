@@ -6,7 +6,8 @@ $hiredate=$_POST["hiredate"];
 $comm=$_POST["comm"];
 $sal=$_POST["sal"];
 $deptno=$_POST["deptno"];
-
+if(isset($fname) && isset($job) && isset($hiredate) && isset ($deptno) && isset($fname)){
+if (!empty($fname) && !empty($hiredate)){
 $query="INSERT INTO emp (ename,job,hiredate,comm,sal,deptno) VALUES(:ename,:job,:hdate,:comm,:sal,:deptno)";
 
 $stmt=$conn->prepare($query);
@@ -19,5 +20,10 @@ $stmt->bindParam(':deptno',$deptno);
 $stmt->execute();
 
   header("location:employee.php");
-
+  }
+  else{
+    header("location:employee.php");
+    
+  }
+}
 ?>
