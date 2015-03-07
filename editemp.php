@@ -116,8 +116,10 @@ $ido=$_GET["id"];
           <div class="control-group">
             <label class="control-label" for="button1id"></label>
             <div class="controls">
-              <button type="submit" id="button1id" name="button1id" class="btn btn-success">EDIT</button>
-              <button type="reset" id="button2id" name="button2id" class="btn btn-danger">RESET</button>
+              <button type="submit" id="button1id" name="button1id" class="btn btn-success">Edit</button>
+              <button type="reset" id="button2id" name="button2id" class="btn btn-warning">Reset</button>
+              <button id="button3id" name="button3id" class="btn btn-danger">Quit</button>
+
             </div>
           </div>
 
