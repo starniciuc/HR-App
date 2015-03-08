@@ -19,4 +19,7 @@
   $('#datefrom').datepicker({dateFormat:"yy-mm-dd",navigationAsDateFormat: true,showButtonPanel: true});
   $('#button3id').click(function(){
     window.location='employee.php';
-  })
+  });
+  $('#button4id').click(function(){
+    window.location='interns.php';
+  });
