@@ -12,6 +12,7 @@
   $dateto=$_POST["dateto"];
   $job=$_POST["job"];
   $deptno=$_POST["deptno"];
+  if(!isset($intername) || empty($intername)) header("location:interns.php");
   if(!empty($datefrom) and !empty($dateto)){
     $start = new DateTime($datefrom); // DD-MM-YYYY
     $end = new DateTime($dateto);
